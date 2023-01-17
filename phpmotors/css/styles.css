@@ -1,3 +1,62 @@
-@media screen {
-    
+/* variables */
+:root {
+    --light-gray: #bababa;
+    --dark-gray: #8d8d8d;
+    --light-blue: #a6cbeb;
+    --dark-blue: #4c96d7;
+    --main-black: #3a3a3a;
+    --main-white: #ffffff;
+    --sans-serif: Arial, Helvetica, sans-serif;
+    --serif: Times, serif;
+}
+
+
+/* defaults for all pages, designed for mobile devices*/
+  
+/*---------- whole page ----------*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--sans-serif);
+    background-color: var(--main-white);
+}
+
+/*---------- header ----------*/
+header {
+    text-align: center;
+}
+    /* .header-logo {
+
+} */
+/* .header-account {
+
+} */
+
+/*---------- navigation ----------*/
+.nav-list {
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+.nav-list a:hover {
+    background-color: var(--light-blue);
+    color: var(--main-black);
+}
+.nav-list a .focused {
+    background-color: var(--dark-blue);
+    color: var(--main-black);
+}
+
+/*---------- footer ----------*/
+footer {
+    text-align: center;
+}
+
+/*----------  ----------  ----------*/
+/*---------- large screens ----------*/
+@media screen and (min-width: 1280px) {
+    body {
+        background-image: url("../images/site/small_check.jpg");
+    }
 }

@@ -1,25 +1,14 @@
+<!DOCTYPE html>
 <html lang="eng">
     <head>
-        <title><?php echo $title; ?></title>
-        <link href="styles.css" type="text/css"/>
+        <title><?php echo $title = "PHP Motors Template"; ?></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./css/styles.css" media="screen" />
     </head>
-    <header>
-
-    </header>
-    <nav>
-        <ul>
-           <a href=""><li><span>Home</span></li></a>
-           <a href=""><li><span>Classic</span></li></a>
-           <a href=""><li><span>Sports</span></li></a>
-           <a href=""><li><span>SUV</span></li></a>
-           <a href=""><li><span>Trucks</span></li></a>
-           <a href=""><li><span>Used</span></li></a>
-        </ul>
-    </nav>
     <body>
-        <h1></h1>
+        <?php include("./common/header.php"); ?>
+        <?php include("./common/nav.php")?>
+        <?php echo $body = "<h1>Default Headline</h1>"; ?>
+        <?php include("./common/footer.php"); ?>
     </body>
-    <footer>
-
-    </footer>
 </html>
